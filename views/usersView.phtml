@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Users</title>
+</head>
+<body>
+<?php
+foreach ($users as $user) {
+    echo "<h2>".$user["first_name"]." ".$user["last_name"]." </h2><small> phone:". $user["phone"] ."</small>";
+}
+?>
+</body>
+</html>
