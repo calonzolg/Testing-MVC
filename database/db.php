@@ -3,10 +3,10 @@
 
 class db
 {
-    public static function conexion()
+    public static function connection()
     {
-        $conexion = new mysqli("localhost", "root", "", "mvc");
-        $conexion->query("SET NAMES 'utf8'");
-        return $conexion;
+        $connection = new mysqli("localhost", "root", "", "mvc");
+        $connection->query("SET NAMES 'utf8'");
+        return $connection;
     }
 }

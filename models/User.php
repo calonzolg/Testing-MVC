@@ -12,13 +12,13 @@ class User
     private $users;
 
     public function __construct(){
-        $this->db=db::conexion();
+        $this->db=db::connection();
         $this->users=array();
     }
 
     public function getUsers(){
-        $consulta=$this->db->query("select * from users;");
-        while($filas=$consulta->fetch_assoc()){
+        $query=$this->db->query("select * from users;");
+        while($filas=$query->fetch_assoc()){
             $this->users[]=$filas;
         }
         return $this->users;
